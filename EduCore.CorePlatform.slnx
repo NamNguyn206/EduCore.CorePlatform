@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="EduCore.CorePlatform.API/EduCore.CorePlatform.API.csproj" />
+  <Project Path="EduCore.CorePlatform.Application/EduCore.CorePlatform.Application.csproj" Id="fd12ad01-8af3-4af4-bc45-6daf2ecb9c0c" />
+  <Project Path="EduCore.CorePlatform.Domain/EduCore.CorePlatform.Domain.csproj" Id="dddaa102-2f18-417c-bab8-937347c55f36" />
+  <Project Path="EduCore.CorePlatform.Infrastructure/EduCore.CorePlatform.Infrastructure.csproj" Id="cf9a1da6-b775-4e84-9bba-117732e02b1b" />
+</Solution>

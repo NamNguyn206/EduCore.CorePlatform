@@ -1,0 +1,11 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace EduCore.CorePlatform.Application.Features.MobileApp.V1.Auth.Login.DTOs;
+
+public class TenantDto
+{
+    public Guid Id { get; set; }
+    public string Name { get; set; } = default!;
+}

@@ -1,0 +1,19 @@
+﻿using DocumentFormat.OpenXml.Wordprocessing;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using EduCore.CorePlatform.Application.Common.Specifications;
+using EduCore.CorePlatform.Application.Abstractions.MultiTenants;
+
+namespace EduCore.CorePlatform.Application.Features.WebApp.V1.MultiTenants.Categories.Supplier.Specifications.Commands;
+
+public sealed class SupplierByNameForCreateSpec
+    : TenantSpecification<Domain.Entities.MultiTenants.Categories.Supplier, Guid>
+{
+    public SupplierByNameForCreateSpec(ICurrentTenant currentTenant, string name)
+        : base(currentTenant)
+    {
+        AndCriteria(x => !x.IsDeleted);
+        AndCriteria(x => x.Name == name);
+    }
+}
